@@ -24,12 +24,17 @@ public class EmployeeWageBuilder {
 
             //UC-3 Add Part Time Employee and Wage
             int emp_Type = random.nextInt() % 2;
-            if(emp_Type == 0){
-                System.out.println("Employee is Part Time.");
-                total_Wage = WAGE_PER_HR * PART_TIME_HR;
-            }else{
-                System.out.println("Employee is Full Time.");
-                total_Wage = WAGE_PER_HR * FULL_TIME_HR;
+            //UC-4 Using switch case Statement
+            switch (emp_Type) {
+                case 0:
+                    System.out.println("Employee is Part Time.");
+                    total_Wage = WAGE_PER_HR * PART_TIME_HR;
+                    break;
+                case -1:
+                case 1:
+                    System.out.println("Employee is Full Time.");
+                    total_Wage = WAGE_PER_HR * FULL_TIME_HR;
+                    break;
             }
         }
         System.out.println("Total Wage " + total_Wage );
