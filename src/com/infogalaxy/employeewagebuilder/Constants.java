@@ -9,5 +9,5 @@ public class Constants {
     final static int IS_PART_TIME = 0;
     final static int IS_FULL_TIME = 1;
     final static int WORKING_DAYS = 20;
-    final static int TOTAL_WORKING_HRS = 48;
+    final static int TOTAL_WORKING_HRS = 100;
 }
